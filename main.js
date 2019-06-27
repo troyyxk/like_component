@@ -1,10 +1,10 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var like_component_1 = require("./like.component");
 var likeComponent = new like_component_1.Like(10, true);
 likeComponent.onClick();
-console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);
+console.log("Like counts: " + likeComponent.count + ", been selected: " + likeComponent.lighted);
 likeComponent.onClick();
-console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);
+console.log("Like counts: " + likeComponent.count + ", been selected: " + likeComponent.lighted);
 likeComponent.onClick();
-console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);
+console.log("Like counts: " + likeComponent.count + ", been selected: " + likeComponent.lighted);
