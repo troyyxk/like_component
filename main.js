@@ -1,5 +1,10 @@
-function log(message) {
-    console.log(message);
-}
-var message = "hello";
-log(message);
+"use strict";
+exports.__esModule = true;
+var like_component_1 = require("./like.component");
+var likeComponent = new like_component_1.Like(10, true);
+likeComponent.onClick();
+console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);
+likeComponent.onClick();
+console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);
+likeComponent.onClick();
+console.log("Like counts: " + likeComponent._count + ", been selected: " + likeComponent._lighted);

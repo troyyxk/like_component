@@ -1,7 +1,23 @@
-function log(message) {
-  console.log(message);
-}
+import { Like } from "./like.component";
 
-let message = "hello";
+let likeComponent = new Like(10, true);
+likeComponent.onClick();
+console.log(
+  `Like counts: ${likeComponent._count}, been selected: ${
+    likeComponent._lighted
+  }`
+);
 
-log(message);
+likeComponent.onClick();
+console.log(
+  `Like counts: ${likeComponent._count}, been selected: ${
+    likeComponent._lighted
+  }`
+);
+
+likeComponent.onClick();
+console.log(
+  `Like counts: ${likeComponent._count}, been selected: ${
+    likeComponent._lighted
+  }`
+);
